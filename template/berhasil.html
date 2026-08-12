@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Pendaftaran Berhasil</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif
+}
+
+body{
+    background:#f3f7f4;
+    color:#183b2b
+}
+
+nav{
+    background:#075c3b;
+    color:white;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:18px
+}
+
+.container{
+    width:85%;
+    max-width:650px;
+    margin:50px auto
+}
+
+.box{
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 3px 12px rgba(0,0,0,.1)
+}
+
+.icon{
+    width:70px;
+    height:70px;
+    background:#dff4e7;
+    color:#087847;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:35px;
+    margin:0 auto 20px
+}
+
+h1{
+    color:#075c3b;
+    margin-bottom:15px
+}
+
+.data{
+    background:#e5f4ea;
+    padding:20px;
+    margin:25px 0;
+    border-radius:8px;
+    text-align:left
+}
+
+.data p{
+    margin:8px 0
+}
+
+.nomor{
+    background:#dff4e7;
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+    text-align:center
+}
+
+.nomor h2{
+    color:#075c3b;
+    margin-top:8px
+}
+
+.btn{
+    display:inline-block;
+    background:#075c3b;
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    text-decoration:none;
+    margin:5px
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<nav>
+
+<h2>Gontor Registration</h2>
+
+<div>
+
+<a href="/">Beranda</a>
+<a href="/daftar">Pendaftaran</a>
+<a href="/status">Status</a>
+<a href="/admin">Admin</a>
+
+</div>
+
+</nav>
+
+
+<div class="container">
+
+<div class="box">
+
+
+<div class="icon">✓</div>
+
+
+<h1>Pendaftaran Berhasil!</h1>
+
+<p>
+Data pendaftaran kamu telah berhasil disimpan.
+</p>
+
+
+<div class="nomor">
+
+<p>Nomor Pendaftaran</p>
+
+<h2>{{nomorPendaftaran}}</h2>
+
+</div>
+
+
+<div class="data">
+
+<p>
+<b>Nama:</b>
+{{nama}}
+</p>
+
+<p>
+<b>Alamat:</b>
+{{alamat}}
+</p>
+
+<p>
+<b>Nomor Telepon:</b>
+{{nomorTelepon}}
+</p>
+
+<p>
+<b>Asal Sekolah:</b>
+{{asalSekolah}}
+</p>
+
+<p>
+<b>Nama Wali:</b>
+{{namaWali}}
+</p>
+
+<p>
+<b>Tanggal Pendaftaran:</b>
+{{tanggal}}
+</p>
+
+<p>
+<b>Status:</b>
+{{status}}
+</p>
+
+</div>
+
+
+<p>
+Simpan nomor pendaftaran untuk mengecek status.
+</p>
+
+
+<br>
+
+
+<a href="/status" class="btn">
+Cek Status
+</a>
+
+<a href="/" class="btn">
+Kembali ke Beranda
+</a>
+
+
+</div>
+
+</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Login Admin</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#f3f7f4;color:#183b2b}
+nav{background:#075c3b;color:white;padding:15px 8%;display:flex;justify-content:space-between;align-items:center}
+nav h2{margin:0}
+nav a{color:white;text-decoration:none;margin-left:18px}
+.container{width:85%;max-width:450px;margin:70px auto}
+.box{background:white;padding:35px;border-radius:15px;box-shadow:0 3px 12px rgba(0,0,0,.1)}
+h1{text-align:center;color:#075c3b;margin-bottom:25px}
+label{display:block;font-weight:bold;margin-top:15px}
+input{width:100%;padding:12px;margin-top:7px;border:1px solid #ccc;border-radius:7px}
+button{width:100%;margin-top:25px;background:#075c3b;color:white;border:0;padding:12px;border-radius:8px;font-weight:bold;cursor:pointer}
+button:hover{background:#087847}
+.info{margin-top:20px;padding:12px;background:#e5f4ea;border-radius:7px;font-size:14px}
+</style>
+
+</head>
+<body>
+
+<nav>
+<h2>Gontor Registration</h2>
+<div>
+<a href="/">Beranda</a>
+<a href="/daftar">Pendaftaran</a>
+<a href="/status">Status</a>
+</div>
+</nav>
+
+<div class="container">
+<div class="box">
+
+<h1>Login Admin</h1>
+
+<form action="/login" method="POST">
+
+<label>Username</label>
+<input type="text" name="username" placeholder="Masukkan username" required>
+
+<label>Password</label>
+<input type="password" name="password" placeholder="Masukkan password" required>
+
+<button type="submit">Login</button>
+
+</form>
+
+<!-- <div class="info">
+<b>Login Demo</b><br>
+Username : admin<br>
+Password: admin123 -->
+</div>
+
+</div>
+</div>
+
+</body>
+</html>

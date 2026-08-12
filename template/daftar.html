@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Pendaftaran Calon Pelajar</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#f3f7f4;color:#183b2b}
+nav{background:#075c3b;color:white;padding:15px 8%;display:flex;justify-content:space-between;align-items:center}
+nav a{color:white;text-decoration:none;margin-left:18px}
+.container{width:85%;max-width:750px;margin:40px auto}
+.form-box{background:white;padding:30px;border-radius:12px;box-shadow:0 3px 10px rgba(0,0,0,.08)}
+h1{color:#075c3b;margin-bottom:25px}
+label{display:block;font-weight:bold;margin-top:15px}
+input,textarea{width:100%;padding:12px;margin-top:7px;border:1px solid #ccc;border-radius:7px}
+textarea{height:100px;resize:vertical}
+button{margin-top:20px;background:#075c3b;color:white;border:0;padding:12px 22px;border-radius:8px;font-weight:bold;cursor:pointer}
+button:hover{background:#087847}
+</style>
+</head>
+<body>
+
+<nav>
+<h2>Gontor Registration</h2>
+<div>
+<a href="index.html">Beranda</a>
+<a href="daftar.html">Pendaftaran</a>
+<a href="status.html">Status</a>
+<a href="admin.html">Admin</a>
+</div>
+</nav>
+
+<div class="container">
+<div class="form-box">
+<h1>Form Pendaftaran Calon Pelajar</h1>
+
+<form action="/daftar" method="POST">
+
+<label>Nama Lengkap</label>
+<input type="text" name="nama" placeholder="Masukkan nama lengkap" required>
+
+<label>Alamat</label>
+<textarea name="alamat" placeholder="Masukkan alamat" required></textarea>
+
+<label>Nomor Telepon</label>
+<input type="text" name="nomorTelepon" placeholder="Masukkan nomor telepon" required>
+
+<label>Asal Sekolah</label>
+<input type="text" name="asalSekolah" placeholder="Masukkan asal sekolah" required>
+
+<label>Nama Wali</label>
+<input type="text" name="namaWali" placeholder="Masukkan nama wali" required>
+
+<label>Tanggal Pendaftaran</label>
+<input type="text" name="tanggal" placeholder="Contoh: 11 Agustus 2026" required>
+
+<button type="submit">Simpan Pendaftaran</button>
+
+</form>
+</div>
+</div>
+
+</body>
+</html>>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Data Pendaftar - Admin</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif
+}
+
+body{
+    background:#f3f7f4;
+    color:#183b2b
+}
+
+nav{
+    background:#075c3b;
+    color:white;
+    padding:15px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:18px
+}
+
+.container{
+    width:95%;
+    max-width:1200px;
+    margin:40px auto
+}
+
+.box{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08)
+}
+
+h1{
+    color:#075c3b;
+    margin-bottom:8px
+}
+
+.subjudul{
+    margin-bottom:25px;
+    color:#555
+}
+
+.table-wrapper{
+    overflow-x:auto
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    min-width:900px
+}
+
+th{
+    background:#075c3b;
+    color:white;
+    padding:12px;
+    text-align:left
+}
+
+td{
+    padding:11px;
+    border-bottom:1px solid #ddd
+}
+
+tr:hover{
+    background:#f5faf7
+}
+
+.status{
+    font-weight:bold
+}
+
+.menunggu{
+    color:#b77900
+}
+
+.diterima{
+    color:#087847
+}
+
+.ditolak{
+    color:#c0392b
+}
+
+.btn{
+    display:inline-block;
+    padding:7px 12px;
+    border-radius:6px;
+    text-decoration:none;
+    color:white;
+    font-size:13px;
+    margin:2px
+}
+
+.terima{
+    background:#087847
+}
+
+.tolak{
+    background:#c0392b
+}
+
+.kosong{
+    text-align:center;
+    padding:30px
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<nav>
+
+<h2>Gontor Registration - Admin</h2>
+
+<div>
+
+<a href="/">Beranda</a>
+
+<a href="/admin">Data Pendaftar</a>
+
+<a href="/status">Cek Status</a>
+
+</div>
+
+</nav>
+
+
+<div class="container">
+
+<div class="box">
+
+<h1>Data Calon Pelajar</h1>
+
+<p class="subjudul">
+Daftar calon pelajar yang telah melakukan pendaftaran.
+</p>
+
+
+<div class="table-wrapper">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>No</th>
+
+<th>Nomor Pendaftaran</th>
+
+<th>Nama</th>
+
+<th>Alamat</th>
+
+<th>Nomor Telepon</th>
+
+<th>Asal Sekolah</th>
+
+<th>Nama Wali</th>
+
+<th>Tanggal</th>
+
+<th>Status</th>
+
+<th>Aksi</th>
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+{{DATA_PENDAFTAR}}
+
+</tbody>
+
+
+</table>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+<meta charset="UTF-8">
+
+<title>Cek Status Pendaftaran</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif
+}
+
+body{
+    background:#f3f7f4;
+    color:#183b2b
+}
+
+nav{
+    background:#075c3b;
+    color:white;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:18px
+}
+
+.container{
+    width:85%;
+    max-width:650px;
+    margin:40px auto
+}
+
+.box{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08)
+}
+
+h1{
+    color:#075c3b;
+    margin-bottom:25px
+}
+
+label{
+    display:block;
+    font-weight:bold;
+    margin-bottom:7px
+}
+
+input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:7px
+}
+
+button{
+    margin-top:18px;
+    background:#075c3b;
+    color:white;
+    border:0;
+    padding:12px 22px;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer
+}
+
+.hasil{
+    margin-top:25px;
+    padding:20px;
+    background:#e3f4e9;
+    border-left:5px solid #075c3b;
+    border-radius:5px
+}
+
+.hasil h3{
+    margin-bottom:10px
+}
+
+.hasil p{
+    margin:4px 0;
+    line-height:1.4
+}
+
+.status{
+    font-weight:bold;
+    color:#075c3b
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<h2>Gontor Registration</h2>
+
+<div>
+
+<a href="index.html">Beranda</a>
+<a href="daftar.html">Pendaftaran</a>
+<a href="status.html">Status</a>
+<a href="admin.html">Admin</a>
+
+</div>
+
+</nav>
+
+
+<div class="container">
+
+<div class="box">
+
+<h1>Cek Status Pendaftaran</h1>
+
+
+<form action="/status" method="GET">
+
+<label>Nomor Pendaftaran</label>
+
+<input
+    type="text"
+    name="nomor"
+    placeholder="Contoh: GTR-0001"
+    required
+>
+
+<button type="submit">
+Cek Status
+</button>
+
+</form>
+
+
+<div class="hasil">
+
+<h3>Informasi Pendaftaran</h3>
+
+<p>
+<b>Nomor:</b> {{nomor}}
+</p>
+
+<p>
+<b>Nama:</b> {{nama}}
+</p>
+
+<p>
+<b>Asal Sekolah:</b> {{asalSekolah}}
+</p>
+
+<p>
+<b>Status:</b>
+<span class="status">{{status}}</span>
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</body>
+
+</html>
